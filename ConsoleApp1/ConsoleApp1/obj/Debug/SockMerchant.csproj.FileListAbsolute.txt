@@ -1,0 +1,7 @@
+C:\Users\akash\Desktop\SockMerchantProgram\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\akash\Desktop\SockMerchantProgram\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\akash\Desktop\SockMerchantProgram\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\akash\Desktop\SockMerchantProgram\ConsoleApp1\ConsoleApp1\obj\Debug\SockMerchant.csprojAssemblyReference.cache
+C:\Users\akash\Desktop\SockMerchantProgram\ConsoleApp1\ConsoleApp1\obj\Debug\SockMerchant.csproj.CoreCompileInputs.cache
+C:\Users\akash\Desktop\SockMerchantProgram\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\akash\Desktop\SockMerchantProgram\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

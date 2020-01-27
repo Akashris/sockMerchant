@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace SockMerchant
 {
-    class sockPairs
+    public class sockPairs
     {
         int arrayIndex,traverseIndex;
-        int numberOfSocks = -1,count=0;
+        int count=0;
         List<int> sockList = new List<int>();
         List<int> duplicateList = new List<int>();
 
-        public void getValue()
+        public int totalSocks(int numberOfSocks)
         {
 
 
@@ -37,6 +37,10 @@ namespace ConsoleApp1
                     Console.WriteLine("\nEnter a Valid Input");
                 }
             }
+            return numberOfSocks;
+        }
+        public List<int> getSockList(int numberOfSocks)
+        { 
             string _sock_String;
             int validInputFlag = 0;
 
@@ -75,16 +79,13 @@ namespace ConsoleApp1
                     }
                 }
             }
+            return sockList;
         }
-        public void printDetail()
+
+       
+        public int findDuplicates(List<int> sockList)
         {
-            for(arrayIndex=0;arrayIndex<numberOfSocks;arrayIndex++)
-            {
-                Console.WriteLine("\n\n{0}", sockList[arrayIndex]);
-            }
-        }
-        public void findDuplicates()
-        {
+            
             duplicateList = sockList;
             for(arrayIndex=0;arrayIndex< duplicateList.Count-1;arrayIndex++)
             {
@@ -111,14 +112,32 @@ namespace ConsoleApp1
                     }
                 }
             }
-            Console.WriteLine("\nThe number of matching pairs are : {0}", count);
-
+            
+            int result;
+            for (arrayIndex = 0; arrayIndex < sockList.Count; arrayIndex++)
+            {
+                result = -1;
+                if (sockList[arrayIndex] <= 0)
+                {
+                    return result;
+                }
+                else
+                {
+                    result = 1;
+              
+                }
+                
+            }
+            return count;
         }
         public static void Main(string[] args)
         {
             sockPairs sock = new sockPairs();
-            sock.getValue();
-            sock.findDuplicates();
+            int numberOfSocks = -1;
+            numberOfSocks = sock.totalSocks(numberOfSocks);
+            List<int>sockList=sock.getSockList(numberOfSocks);
+            int count = sock.findDuplicates(sockList);
+            Console.WriteLine(count);
             Console.ReadLine();
         }
     }
